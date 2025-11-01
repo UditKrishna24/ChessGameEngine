@@ -1,0 +1,16 @@
+in\engine\BoardState.class
+in\engine\ChessBoardGUI.class
+in\engine\King.class
+in\engine\Knight.class
+in\engine\Coin.class
+in\engine\Board.class
+in\engine\Game.class
+in\engine\Square.class
+in\engine\Queen.class
+in\engine\castling.class
+in\engine\Rook.class
+in\engine\StockfishEngine.class
+in\engine\coinPromotion.class
+in\engine\Main.class
+in\engine\Pawn.class
+in\engine\Bishop.class
