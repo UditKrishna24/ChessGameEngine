@@ -7,8 +7,8 @@
 -> Clone the Repository to your local Machine <br>
 -> cd to the Directory of the Package folder <br>
 
-> javac -d class src/chessGameEngine/\*.java <br>
-> java -cp class chessGameEngine.Test <br>
+> javac -d class src/ChessGameEngine/\*.java <br>
+> java -cp class ChessGameEngine.Test <br>
 
 ->Or to just run the .jar file of the package[Recommended]<br>
 
@@ -16,7 +16,7 @@
 
 ->To create a JAR file <br>
 
-> jar cvfm chessGameEngine.jar manifest.txt chessGameEngine<br>
+> jar cvfm ChessGameEngine.jar manifest.txt chessGameEngine<br>
 
 [The manifest.txt contains the class which contains main method]<br>
 
