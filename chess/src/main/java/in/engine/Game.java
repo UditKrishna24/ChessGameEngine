@@ -14,6 +14,13 @@ class Game {
     StockfishEngine bot;
     PrintStream out;
     public void moveParser(String move, Board b) {
+        if (move == null) {
+            throw new IllegalArgumentException("Empty move");
+        }
+        move = move.trim();
+        if (move.isEmpty()) {
+            throw new IllegalArgumentException("Empty move");
+        }
         int fromRow = (int) (move.charAt(1) - 49);
         int fromCol = (int) (move.charAt(0) - 97);
         int toRow = (int) (move.charAt(3) - 49);
@@ -111,7 +118,7 @@ class Game {
                     e.printStackTrace();
                 }
             } else {
-                out.println("Enter your move/('ctrl'): ");
+                out.println("Enter your move (Format example: e2e4) / ('ctrl'): ");
                 move = in.nextLine();
             }
             if (move.equals("ctrl")) {
@@ -119,6 +126,10 @@ class Game {
             }
             isControlMode = controlMode(b, isControlMode, in, gui);
             if (move.equals("ctrl")) {
+                continue;
+            }
+            if (move == null || move.trim().isEmpty()) {
+                out.println("Invalid move, Enter again! (Format example: e2e4)");
                 continue;
             }
             moveParser(move, b);
